@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Plus+Jakarta+Sans:wght@500&display=swap');
+header {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    background-color: #efefef;
+    border-width: 0ch;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif
+}
+
+body{
+    font-family: 'Akshar', sans-serif;
+    background: url(../IMG/deskphoto.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1.4fr 1fr 1fr 0.6fr; 
+    grid-template-rows: 0.1fr 1.3fr 1.3fr 1.3fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."
+      "texto . foto ."
+      ". foto2 . ."
+      ". . . ."
+      ". . . ."; 
+  }
+  .container img {
+    inline-size: 100%;
+  } 
+  .foto { grid-area: foto; }
+  .foto2 { grid-area: foto2; }
+  .texto { grid-area: texto; }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
