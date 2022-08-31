@@ -1,37 +1,39 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <style>
-        body { background-color: #efefef; }
-    </style>
+    <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
 </head>
 <body>
-    <header style="background-color: #efefef ;">
-    <img src="./IMG/LUIGU.jpg" alt="logo">
-        <nav>
-            <div class="flex-container" style="background-color: #BD4B39">
-                <div class="flex-items"><a href="./index.html" style="color: white">HOME</a></div>
-                <div class="flex-items"><a href="./pages/qs.html" style="color: white;">QUIEN SOY</a></div>
-                <div class="flex-items"><a href="./pages/qh.html" style="color: white;">QUE HAGO</a></div>
-                <div class="flex-items"><a href="./pages/redes.html" style="color: white;">REDES</a></div>
-                <div class="flex-items"><a href="./pages/contacto.html" style="color: white;">CONTACTO</a></div>
-             </div>
-        </nav>    
-    </header>
-        <div class="container">
-            <div class="foto"><img src="./IMG/fotolu.jpeg" alt="Lucia"></div>
-            <div class="foto2"><img src="./IMG/fotolu2.jpeg" alt="Tuti"></div>
-            <div class="texto" style="color: black; text-align: right; white-space: normal; vertical-align: middle; font-size: xx-large;" >“El éxito no es el final, el fracaso no es fatal, es el coraje para continuar lo que cuenta”. Winson Churchill</div>
-        </div>
-    <script src="../js/bootstrap.min.js"></script>        
+   
+    <div class="container">
+        <form id="idForm">
+            <div class="mb-3">
+              <label for="idNombre" class="form-label">Task</label>
+              <input type="text" class="form-control" id="idNombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="idCategoria" class="form-label">Category</label>
+                <input type="text" class="form-control" id="idCategoria"  name="categoria">
+              </div>
+              <div class="mb-3">
+                <label for="idDescripcion" class="form-label">Description</label>
+                <input type="text" class="form-control" id="idDescripcion" name="descripcion">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+    <div class="container">
+        <button id="botonTareas" class="btn btn-secondary">Mostrar tareas</button><br><br>
+        <div class="row" id="divTareas"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
 </body>
-<footer style="color: black;">
-    &copy; Copyright 2022 Mimito Dev.
-</footer>
 </html>
